@@ -5,7 +5,7 @@
     let Head1,Head2,Test1,Test2,Button1:any;
     let timline = gsap.timeline();
     onMount(()=> 
-    timline.from(Head1,{ x: -1000, duration: 0.25}).from(Head2,{ x: -1000, duration:0.25}).from(Test1,{x: -1000,duration:0.25}).from(Test2, {x:-1000, duration:0.25}));
+    timline.from(Head1,{ x: -100, duration: 0.25, opacity:0}).from(Head2,{ x: -100,y:-50, duration:0.25, opacity:0}).from(Test1,{x: -100,duration:0.25,y:-50, opacity:0}).from(Test2, {x:-100,y:-50, duration:0.25, opacity:0}));
 </script>
 <svelte:head>
     <title>
